@@ -7,4 +7,5 @@ class Datas(models.Model):
     Address=models.CharField(max_length=20)
     Contact=models.IntegerField()
     Mail=models.CharField(max_length=20)
-    image=models.ImageField(upload_to="imges/" ,blank=True,null=True)
+    image=models.FileField(upload_to="imges/",blank=True, null=True)
+#     image=models.ImageField(upload_to="imges/" ,blank=True,null=True)
